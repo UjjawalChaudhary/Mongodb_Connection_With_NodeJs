@@ -74,6 +74,7 @@ class User {
       .collection('users')
       .updateOne(
         { _id: new ObjectId(this._id) },
+<<<<<<< HEAD
         { $set: { cart: { items: updatedCartItems } } }
       );
   }
@@ -107,6 +108,12 @@ class User {
     // return db.collection('orders').
   }
 
+=======
+        { $set: { cart: {items: updatedCartItems} } }
+      );
+  }
+
+>>>>>>> 443ed1029467caf590fa465477dcc9d19e7b7ea9
   static findById(userId) {
     const db = getDb();
     return db
